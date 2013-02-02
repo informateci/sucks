@@ -5,34 +5,34 @@ In the beginning, when The Internet was a place to spread *ideas*, *knowledge* a
 
 The purpose of this language was clear: to wrap a plain text document and evolve it into a more meaningful document, enriching it with interactivity, and multimedial content: a *HyperText*
 
-    &lt;HTML&gt;
-        &lt;HEAD&gt;
-            &lt;TITLE&gt;Hello World!&lt;/TITLE&gt;
-        &lt;/HEAD&gt;
-        &lt;BODY&gt;
-            &lt;H1&gt;Hello 1992&lt;/H1&gt;
-            &lt;P&gt;This is mostly all you need to know about HyperText,&lt;BR&gt;
-               use it &lt;B&gt;wisely&lt;/B&gt;&lt;/P&gt;
-        &lt;/BODY&gt;
-    &lt;/HTML&gt;
+    <HTML>
+        <HEAD>
+            <TITLE>Hello World!</TITLE>
+        </HEAD>
+        <BODY>
+            <H1>Hello 1992</H1>
+            <P>This is mostly all you need to know about HyperText,<BR>
+               use it <B>wisely</B></P>
+        </BODY>
+    </HTML>
 
     
 Then, the web was born. And it was fun and sharing for everyone. Sometimes ugly, sometimes useful, but mostly meaningful
     
 But at some point, Someone decided that this was not enough. Someone decided we need more interaction, and more beauty. So, they created two companion: <acronym title="Cascading Style Script">CSS</acronym> and JavaScript. And everyone was grateful and happy, because possibilities were **infinite**
 
-    &lt;SCRIPT&gt;
+    <SCRIPT>
         document.write(\'Hello World, again!\');
         document.write(\'Today is \' + new Date().toLocaleString() + \' and i feel wonderful\');
-    &lt;/SCRIPT&gt;
+    </SCRIPT>
     
-    &lt;STYLE&gt;
+    <STYLE>
         body {
             color: black;
             background: lightgrey;
             font-family: Hevetica, sans-serif;
         }
-    &lt;/STYLE&gt;
+    </STYLE>
         
 So, the web was now powerful, and beautiful, and somewhat complete. It had *style*, it was *interactive*, but most importantly, is purpose was clearly the same: **to provide meaningful documents**
 

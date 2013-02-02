@@ -57,6 +57,7 @@ table {
     padding: 30px;
     font-weight: 400;
     margin-bottom: 0px;
+    text-transform: capitalize;
 }
 .headtitle small {
     font-size: 14pt;
@@ -111,7 +112,7 @@ p {
     font-size: 110%;
     font-weight: 400;
 }
-code {
+pre {
     font-family: "Andale Mono", monospace;
     font-size: 9pt;
     border: solid 1px #888;
