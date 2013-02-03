@@ -35,7 +35,14 @@ var converter = new Showdown.converter(),
         request.send(null);
     };
 
-window.addEventListener('DOMContentLoaded', function () { fill_markdown('everything') }, false);
+window.addEventListener('DOMContentLoaded', function () {
+    var m = /(.*).sucks\.toomu\.ch/.exec(window.location.hostname)
+    if (m != null)
+        fill_markdown(m[1])
+    else
+        fill_markdown('everything')
+}, false);
+
 window.addEventListener('hashchange', function () {
     if (location.hash == '')
         fill_markdown('everything')
