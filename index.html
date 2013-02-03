@@ -7,7 +7,7 @@
     <link href="http://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <h1 class="headtitle" id="title">The web sucks <small>and we explain you why</small></h1>
+    <h1 class="headtitle" id="title">Everything sucks <small>and we explain you why</small></h1>
     <div class="bodycontent" id="content">
     </div>
     <script src="resources/showdown.js" type="text/javascript"></script>
@@ -26,13 +26,22 @@ var converter = new Showdown.converter(),
         request.onreadystatechange = function(evt){
             if (request.readyState === 4 &&
                 [0, 200].indexOf(request.status) > -1 ) {
+                document.title    = title + ' sucks too much';
                 content.innerHTML = converter.makeHtml(request.responseText);
                 header.innerHTML  = title + desc;
             }
         };
         request.send(null);
     };
-window.addEventListener('DOMContentLoaded', function () { fill_markdown('the.web') }, false);
+
+window.addEventListener('DOMContentLoaded', function () { fill_markdown('everything') }, false);
+window.addEventListener('hashchange', function () {
+    if (location.hash == '')
+        fill_markdown('everything')
+    else
+        fill_markdown(location.hash.substr(1))
+}, false);
+
 })();
     </script>
 </body>

@@ -123,3 +123,18 @@ pre {
     background: #333;
     color: #fafafa;
 }
+
+.bodycontent blockquote {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 1%;
+    font-size: 16pt;
+
+    border: 1px solid #ddd;
+    background: #eee;
+
+    font-style: italic;
+}
