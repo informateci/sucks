@@ -27,10 +27,12 @@ var converter = new Showdown.converter(),
         request.onreadystatechange = function(evt){
             if (request.readyState === 4 &&
                 [0, 200].indexOf(request.status) > -1 ) {
-                document.title    = title + ' sucks too much';
                 content.innerHTML = converter.makeHtml(request.responseText);
-                header.innerHTML  = title + desc;
+            } else {
+                content.innerHTML = '<p>Strangely, we do not hate' + title + ' yet.</p>';
             }
+                document.title    = title + ' sucks too much';
+                header.innerHTML  = title + desc;
         };
         request.send(null);
     };
