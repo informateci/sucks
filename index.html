@@ -5,6 +5,17 @@
     <title>The web sucks too much</title>
     <link href="resources/hate.css" rel="stylesheet" type="text/css"/>
     <link href="http://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 <body>
     <h1 class="headtitle" id="title">Everything sucks <small>and we explain you why</small></h1>
@@ -31,8 +42,11 @@ var converter = new Showdown.converter(),
             } else {
                 content.innerHTML = '<p>Strangely, we do not hate' + title + ' yet.</p>';
             }
-                document.title    = title + ' sucks too much';
-                header.innerHTML  = title + desc;
+
+            document.title    = title + ' sucks too much';
+            header.innerHTML  = title + desc;
+
+            window.scrollTo(0, 0);
         };
         request.send(null);
     };
@@ -53,17 +67,6 @@ window.addEventListener('hashchange', function () {
 }, false);
 
 })();
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-35747560-2']);
-  _gaq.push(['_trackPageview']);
-  _gaq.push(['_setDomainName', 'toomu.ch']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-    </script>
+  </script>
 </body>
 </html>
