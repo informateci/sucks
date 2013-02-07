@@ -32,7 +32,7 @@ var converter = new Showdown.converter(),
             desc    = ' sucks <small>and we explain you why<\/small>',
             content = document.getElementById('content'),
             header  = document.getElementById('title'),
-            url     = 'hates/' + hate;
+            url     = 'hates/' + hate + '.md';
         
         request.open("GET", url, true);
         request.onreadystatechange = function(evt){
